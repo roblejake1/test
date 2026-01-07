@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Heart, Shield, Mountain, Star, Check, X, Quote } from "lucide-react";
 
@@ -30,10 +31,12 @@ export default function Home() {
       <section className="relative h-screen flex items-center pt-16">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent z-10" />
-          <img 
+          <Image 
             src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&q=80&w=2000" 
             alt="Loyal Dog" 
-            className="w-full h-full object-cover"
+            fill
+            priority
+            className="object-cover"
           />
         </div>
         
@@ -169,7 +172,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 text-center">
           <motion.div {...fadeIn} className="inline-block relative mb-12">
             <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-2xl mx-auto relative z-10">
-              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400" alt="Jake" className="w-full h-full object-cover" />
+              <Image 
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400" 
+                alt="Jake" 
+                fill
+                className="object-cover" 
+              />
             </div>
             <div className="absolute -inset-2 bg-amber-400 rounded-full blur-xl opacity-20 animate-pulse" />
           </motion.div>
@@ -203,7 +211,12 @@ function ReasonCard({ icon, title, description, image, index }: { icon: React.Re
       className="group bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100"
     >
       <div className="h-64 overflow-hidden relative">
-        <img src={image} alt={title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+        <Image 
+          src={image} 
+          alt={title} 
+          fill
+          className="object-cover group-hover:scale-110 transition-transform duration-700" 
+        />
         <div className="absolute top-6 right-6 bg-white p-3 rounded-2xl shadow-lg">
           {icon}
         </div>
