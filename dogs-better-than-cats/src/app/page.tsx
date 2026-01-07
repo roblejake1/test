@@ -48,7 +48,7 @@ export default function Home() {
               The Definitive Thesis
             </span>
             <h1 className="text-6xl md:text-8xl font-black leading-[0.9] tracking-tight text-slate-900 mb-8">
-              Man's Best <br />
+              Man&apos;s Best <br />
               <span className="text-amber-500">Only</span> Friend.
             </h1>
             <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-lg">
@@ -158,7 +158,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-6 text-center text-white">
           <Quote className="w-16 h-16 mx-auto mb-8 opacity-30" />
           <h2 className="text-3xl md:text-5xl font-serif italic leading-tight mb-8">
-            "I've never met a dog that didn't think I was the most important person in the world. I've never met a cat that didn't think I was a glorified furniture piece."
+            &quot;I&apos;ve never met a dog that didn&apos;t think I was the most important person in the world. I&apos;ve never met a cat that didn&apos;t think I was a glorified furniture piece.&quot;
           </h2>
           <div className="font-bold tracking-widest uppercase">— Jake, Author & Truth-Teller</div>
         </div>
@@ -175,7 +175,7 @@ export default function Home() {
           </motion.div>
           <h3 className="text-3xl font-black mb-4">Meet Jake</h3>
           <p className="max-w-xl mx-auto text-slate-500 mb-12 text-lg">
-            Jake is a professional dog-translator and a vocal advocate for the abolition of the 'Cat Person' label. He spends his weekends being dragged through mud by his Golden Retriever, Barnaby.
+            Jake is a professional dog-translator and a vocal advocate for the abolition of the &apos;Cat Person&apos; label. He spends his weekends being dragged through mud by his Golden Retriever, Barnaby.
           </p>
           
           <div className="flex justify-center gap-6 mb-24">
